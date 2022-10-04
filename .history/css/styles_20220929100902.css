@@ -1,0 +1,25 @@
+:root {
+    --color-primary: #f00;
+    --color-secondary: #0f0;
+    --color-tertiary: #00f;
+    background-color: #dddddd;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+} */
+
+body {
+    /* margin: 0;
+    display: flex;
+    place-items: center; */
+    min-width: 100vw;
+    min-height: 100vh;
+}

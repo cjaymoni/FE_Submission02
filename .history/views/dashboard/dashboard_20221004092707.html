@@ -1,0 +1,127 @@
+<div class="content">
+  <div class="container">
+    <div class="order-header-text">
+      <span>Dashboard</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="dashboard-card">
+      <div class="dashboard-card-header">
+        <div class="dashboard-card-header-text">
+          <span>Today</span>
+        </div>
+        <div class="dashboard-card-header-img">
+          <i class="fas fa-calendar-day"></i>
+        </div>
+      </div>
+      <div class="dashboard-card-body">
+        <div class="dashboard-card-body-text">
+          <span>$1456K / 9 0rders</span>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-card">
+      <div class="dashboard-card-header">
+        <div class="dashboard-card-header-text">
+          <span>Last Week</span>
+        </div>
+        <div class="dashboard-card-header-img">
+          <i class="fas fa-calendar-week"></i>
+        </div>
+      </div>
+      <div class="dashboard-card-body">
+        <div class="dashboard-card-body-text">
+          <span>$34K / 120 0rders</span>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-card">
+      <div class="dashboard-card-header">
+        <div class="dashboard-card-header-text">
+          <span>Last Month</span>
+        </div>
+        <div class="dashboard-card-header-img">
+          <i class="fas fa-calendar-days"></i>
+        </div>
+      </div>
+      <div class="dashboard-card-body">
+        <div class="dashboard-card-body-text">
+          <span>$95K / 876 0rders</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="order-header-text">
+      <span id="weekText">Revenue (last 7 days)</span>
+      <span id="monthText">Revenue (last 12 months)</span>
+
+      <div style="display: flex">
+        <label class="switch">
+          <input type="checkbox" id="toggleButton" name="toggleButton" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- <div id="weeklyChartContainer" style="display: flex"> -->
+    <canvas id="weeklyChart" width="200" height="80"></canvas>
+    <!-- </div> -->
+    <!-- <div id="monthlyChartContainer" style="display: flex"> -->
+    <canvas id="monthlyChart" width="200" height="80"></canvas>
+    <!-- </div> -->
+  </div>
+
+  <div class="container-col">
+    <div>
+      <span>Best Sellers</span>
+    </div>
+    <table id="table">
+      <!-- <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th># Units Sold</th>
+          <th>Revenue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>2020-10-10</td>
+          <td>$100</td>
+          <td>Delivered</td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>2020-10-10</td>
+          <td>$100</td>
+          <td>Delivered</td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>2020-10-10</td>
+          <td>$100</td>
+          <td>Delivered</td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>2020-10-10</td>
+          <td>$100</td>
+          <td>Delivered</td>
+        </tr>
+
+        <tr>
+          <td>John Doe</td>
+          <td>2020-10-10</td>
+          <td>$100</td>
+          <td>Delivered</td>
+        </tr>
+      </tbody> -->
+    </table>
+  </div>
+</div>
+
+<script src="js/chart.js" defer></script>

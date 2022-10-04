@@ -1,0 +1,39 @@
+<div class="content">
+  <div class="container">
+    <div class="order-header-text">
+      <span>Orders</span>
+      <div>
+        <i class="fas fa-search"></i>
+
+        <input type="text" id="searchInput" placeholder="Search" />
+        <i class="fas fa-times" id="clearIcon"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <table id="ordersTable">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Order Date</th>
+          <th>Order Price</th>
+          <th>Order Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td colspan="4"><i>Loading...</i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+    <i id="prevButton" class="fas fa-chevron-left">Previous</i>
+    <i id="nextButton" class="fas fa-chevron-right">Next</i>
+  </div>
+</div>
+
+<script src="js/orders.js" defer></script>
