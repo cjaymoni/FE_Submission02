@@ -19,11 +19,15 @@ function loginEvent(formData) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Success:", data);
-      localStorage.setItem("access_token", JSON.stringify(data.access_token));
-      localStorage.setItem("refresh_token", JSON.stringify(data.refresh_token));
-
-      window.location.assign("/dashboard");
+      if (data) {
+        // console.log("Success:", data);
+        localStorage.setItem("access_token", JSON.stringify(data.access_token));
+        localStorage.setItem(
+          "refresh_token",
+          JSON.stringify(data.refresh_token)
+        );
+        window.location.assign("/dashboard");
+      }
     })
-    .catch((err) => JSON.stringify(err));
+    .catch((err) => console.log(JSON.stringify(err)));
 }
