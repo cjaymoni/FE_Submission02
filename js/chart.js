@@ -81,7 +81,7 @@ let customFetcher = async (url, config = {}) => {
 
   let { response, data } = await originalRequest(url, config);
 
-  if (response.status === 401) {
+  if (response.status === 401 || response.status === 422) {
     authTokens = await refreshToken(refresh_token);
 
     config["headers"] = {
